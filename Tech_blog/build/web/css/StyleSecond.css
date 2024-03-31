@@ -1,0 +1,179 @@
+/*save category button*/
+/*save cate button*/
+.tooltip-container {
+    --background: #1B3C73;
+    background: var(--background)!important;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    border-radius: 6px;
+    width: 10em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translateX(-60%);
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 5px;
+    width: 13em;
+    text-align: center;
+
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+}
+
+.tooltip-container:hover .tooltip {
+    top: -100%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    animation: shake 500ms ease-in-out forwards;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    70% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.texts {
+    position: relative;
+    padding: 0.4em 0.8em;
+    overflow: hidden;
+}
+
+.texts::before {
+    content: "(^_^)/";
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: inherit;
+    background-color: var(--background);
+    transition: 0.3s;
+}
+
+.tooltip-container:hover .texts::before {
+    top: 0;
+}
+
+
+
+
+
+/*loader in postContainer*/
+.spinner {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+}
+
+.spinner div {
+    position: absolute;
+    width: 50%;
+    height: 150%;
+    background: #000000;
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+    animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+}
+
+.spinner div:nth-child(1) {
+    --delay: 0.1;
+    --rotation: 36;
+    --translation: 150;
+}
+
+.spinner div:nth-child(2) {
+    --delay: 0.2;
+    --rotation: 72;
+    --translation: 150;
+}
+
+.spinner div:nth-child(3) {
+    --delay: 0.3;
+    --rotation: 108;
+    --translation: 150;
+}
+
+.spinner div:nth-child(4) {
+    --delay: 0.4;
+    --rotation: 144;
+    --translation: 150;
+}
+
+.spinner div:nth-child(5) {
+    --delay: 0.5;
+    --rotation: 180;
+    --translation: 150;
+}
+
+.spinner div:nth-child(6) {
+    --delay: 0.6;
+    --rotation: 216;
+    --translation: 150;
+}
+
+.spinner div:nth-child(7) {
+    --delay: 0.7;
+    --rotation: 252;
+    --translation: 150;
+}
+
+.spinner div:nth-child(8) {
+    --delay: 0.8;
+    --rotation: 288;
+    --translation: 150;
+}
+
+.spinner div:nth-child(9) {
+    --delay: 0.9;
+    --rotation: 324;
+    --translation: 150;
+}
+
+.spinner div:nth-child(10) {
+    --delay: 1;
+    --rotation: 360;
+    --translation: 150;
+}
+
+@keyframes spinner-fzua35 {
+    0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {
+        transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+    }
+
+    50% {
+        transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+    }
+}

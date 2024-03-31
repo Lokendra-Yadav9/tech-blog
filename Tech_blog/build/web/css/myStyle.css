@@ -1,0 +1,571 @@
+
+/*utility css for all pages*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*login page banner background*/
+.banner-background{
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 90% 93%, 46% 100%, 40% 93%, 0 100%, 0% 35%, 0 0);
+}
+#profile_btn:hover{
+    color: white;
+}
+
+
+/*uttility class*/
+.primary-background{
+    background: #1B3C73 !important;
+}
+.primary-text{
+    color: #1B3C73!important;
+}
+
+.active{
+    background: #1B3C73!important;
+}
+
+.primary-border{
+    border:3px solid #1B3C73 !important;
+}
+.body-background{
+
+    background-image:
+        radial-gradient(circle at bottom right, hsla(61,60%,8%,0.25) 0%, hsla(61,60%,8%,0.25) 10%,transparent 10%, transparent 100%),
+        radial-gradient(circle at bottom right, hsla(61,60%,8%,0.25) 0%, hsla(61,60%,8%,0.25) 6%,transparent 6%, transparent 100%),
+        radial-gradient(circle at center left, hsla(61,60%,8%,0.25) 0%, hsla(61,60%,8%,0.25) 89%,transparent 89%, transparent 100%),
+        linear-gradient(90deg, rgb(6,105,185),rgb(6,105,185));
+
+    background-position: center;
+}
+
+.bg-transparent{
+    background: transparent;
+}
+
+/*heading text css*/
+.heading-text{
+    font-size: 2.3rem;
+    font-weight:500 ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #333;
+}
+
+/*display-img*/
+.display-img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/*-------------------------------------------*/
+
+/*userprofile and userinfo Edit jsp  jsp page css*/
+.banner-background{
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 90% 93%, 46% 100%, 40% 93%, 0 100%, 0% 35%, 0 0);
+}
+
+.select {
+    width: 50%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+}
+.siteLinks {
+    width: 50%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+}
+
+.intInput{
+    width: 20%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+
+}
+
+
+.otherTechnicalSkill{
+    width: 20%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+}
+.otherSoftSkill{
+    width: 20%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+}
+
+.techInputClass{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.a-tag{
+    text-decoration: none;
+    color: black;
+}
+
+.progressing{
+    cursor: pointer;
+}
+
+
+
+
+/* Modal Content */
+/* Style the profile modal */
+.profileModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black with opacity */
+}
+
+/* Style the modal content */
+.profileModalContent {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+.profileModalContent img {
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    /*width: 30%;*/
+
+}
+
+/* Style the close button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/*------------------------------------------------------------*/
+
+/*css of postContainer jsp*/
+pre {
+    border-radius: 2px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    text-align: left;
+    font-weight: 300;
+    font-size: 18px !important;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 6%; /* Adjust the top position */
+    right: 0; /* Adjust the right position */
+    padding: 3px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+textarea:focus {
+    outline: none;
+}
+
+/*comment section*/
+.comment-box{
+    background-color:white ;
+    height: 400px;
+}
+
+
+
+
+/*----------------------------------------*/
+
+
+/*making tech and soft skill preview*/
+select {
+    width: 50%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+}
+.siteLinks {
+    width: 50%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+}
+
+.intInput{
+    width: 20%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+
+}
+
+
+.otherTechnicalSkill{
+    width: 20%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+}
+.otherSoftSkill{
+    width: 20%;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none; /* Remove outline */
+}
+
+.techInputClass{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.getuserByname{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
+/*user search , search bar*/
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    color: #cccccc;
+}
+
+.user-link {
+    /* Your styles here */
+    color: #333333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.user-link:hover {
+    /* Styles for hover state */
+    color: red;
+}
+
+
+/*search bar css*/
+
+.input-search{
+    height: 2.8rem;
+    width: 2.8rem;
+    border-style: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    outline: none;
+    margin: 0.2rem 1.2rem 0 0;
+    border-radius: 2rem;
+    transition: all .5s ease-in-out;
+    padding-right: 3.2vw;
+    color:#cccccc;
+}
+.input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.btn-search{
+    width: 3rem;
+    height: 3rem;
+    /*border-style: none;*/
+    border: 2px solid #cccccc;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;
+}
+.btn-search:focus ~ .input-search{
+    width: 20rem;
+    border-radius: 0px;
+    color: #fff;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+    width: 20rem;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: 0 0 0 2px transparent;
+    color: #fff;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+#searchForm:focus{
+    outline: none!important;
+}
+
+.btn:focus input:focus, textarea:focus, select:focus {
+    outline: none!important;
+    box-shadow: rgba(0,0,0,0.1)!important;
+}
+
+#searchResults{
+    position: absolute;
+    top: 60%;
+    z-index: 99999;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto;
+
+}
+.result-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+
+
+
+/*add cate btn*/
+/*save cate button*/
+
+
+
+/*post it button*/
+
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: .75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+}
+
+.button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.button:hover .button__icon-wrapper {
+    color: #000;
+}
+
+.button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+}
+
+/*logout button css*/
+
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 2.8rem;
+    height: 2.8rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.299);
+}
+
+/* plus sign */
+.sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 1.5rem;
+}
+
+.sign svg path {
+    fill: white;
+}
+/* text */
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+    width: 9rem;
+    border-radius: 1.2rem;
+    transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+    width: 50%;
+    transition-duration: .3s;
+    padding:0 1rem;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+    opacity: 1;
+    width: 60%;
+    transition-duration: .3s;
+    padding-right: 0.8rem;
+}
+/* button click effect*/
+.Btn:active {
+    transform: translate(2px ,2px);
+}
+
+
+
